@@ -1,4 +1,4 @@
-import { Task } from "../models/Task.js";
+import Task from "../models/Task.js";
 
 const getTasks = async (req, res) => {
   const tasks = await Task.find().sort({ createdAt: -1 });
